@@ -1,0 +1,130 @@
+/*Body*/
+body{
+    margin : 0;
+    background-color: #282b30 ;
+    color: white;
+}
+
+/*Header*/
+
+header{
+    margin : 0;
+}
+
+header > section > nav > a, header > section > nav > a:hover, header > section > nav > a:visited{
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    padding: 2px 0.5em;
+    margin: 0 0.75em;
+}
+
+header > section > nav > a:hover{
+    text-decoration: underline;
+}
+
+header section{
+    position: sticky;
+    top: 0;
+    background-color: #1e2124;
+    padding: 0.5em;
+    margin : 0;
+}
+
+header nav {
+    text-align: right;
+}
+
+header figure {
+    margin : 0;
+}
+
+.head{
+    width: 100%;
+    object-fit: cover;
+    height: 12em;
+}
+
+/*Flex*/
+
+header section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+/*Main*/
+
+h1,h2{
+    font-family: sans-serif;
+}
+
+article > h1{
+    font-size: 2em;
+    align-self: normal;
+}
+
+h2{
+    text-align: center;
+}
+
+main section{
+    margin : 1em;
+    
+}
+
+main article{
+    margin: 0 1em;
+    text-align: justify;
+}
+main article div{
+    margin: 0 1em;
+}
+
+main article figure{
+    background-color: #bde3ff;
+    text-align: center;
+    width: auto;
+}
+
+main article figure:hover{
+    transform: scale(1.1);
+    transition: transform .2s ease;
+}
+main img{
+    width: 15vw;
+    padding: 1em;
+    opacity: 0.5;
+}
+
+hr {
+    size: 10px;
+    color: #c4c4c4;
+    border-width: 5px;
+    border-style: solid;
+    margin: 0 2em;
+}
+
+/*FLEX*/
+main section, main article{
+    display: flex;
+    justify-content:space-evenly;
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+main article div{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Footer */
+footer{
+    background-color: #c4c4c4;
+    padding: 0.5em;
+    color: black;
+}
