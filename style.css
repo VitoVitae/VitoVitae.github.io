@@ -83,20 +83,47 @@ main article div{
     margin: 0 1em;
 }
 
-main article figure{
+main .about-me figure{
+    background-color: 0;
+}
+
+
+main .projet article figure{
     background-color: #bde3ff;
     text-align: center;
     width: auto;
+    position:relative
 }
 
-main article figure:hover{
+
+main .projet article figure:hover{
     transform: scale(1.1);
     transition: transform .2s ease;
 }
-main img{
+
+main .projet article figure figcaption, main .projet article figure:hover figcaption{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #282b30;
+    border-radius: 0.1em;
+    padding: 0.5em;
+    text-align : center;
+    width:fit-content;
+
+    color: white;
+    text-decoration: none;
+}
+main .projet img{
     width: 15vw;
     padding: 1em;
     opacity: 0.5;
+}
+main button{
+    position: absolute;
 }
 
 hr {
