@@ -39,12 +39,24 @@ section#nav{
 
 header figure {
     margin : 0;
+    position: relative;
+}
+
+header figure figcaption {
+    font-size: 3em;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 2em;
 }
 
 .head{
     width: 100%;
     object-fit: cover;
-    height: 12em;
+    height: 15em;
 }
 
 /*Flex*/
@@ -75,6 +87,14 @@ h2{
 
 h3{
     margin: 0;
+}
+
+main a, main a:hover, main a:visited{
+    color: white;
+    text-decoration: none;
+}
+main a:hover{
+    text-decoration: underline;
 }
 
 main section{
@@ -331,4 +351,14 @@ footer .row{
 }
 
 
+/*parcour*/
+
+#parcour h2{
+    text-align: start;
+}
+
+#parcour section{
+    margin: 1em 4em;
+
+}
 /*Media Queries*/
