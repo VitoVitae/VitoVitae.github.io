@@ -11,7 +11,7 @@ header{
     margin : 0;
 }
 
-header > section > nav > a, header > section > nav > a:hover, header > section > nav > a:visited{
+section#nav > nav > a, header > section > nav > a:hover, section#nav > nav > a:visited{
     color: white;
     font-size: large;
     text-decoration: none;
@@ -19,19 +19,20 @@ header > section > nav > a, header > section > nav > a:hover, header > section >
     margin: 0 0.75em;
 }
 
-header > section > nav > a:hover{
+section#nav > nav > a:hover{
     text-decoration: underline;
 }
 
-header section{
+section#nav{
     position: sticky;
     top: 0;
     background-color: #1e2124;
     padding: 0.5em;
     margin : 0;
+    z-index: 1;
 }
 
-header nav {
+#nav nav {
     text-align: right;
 }
 
@@ -47,7 +48,7 @@ header figure {
 
 /*Flex*/
 
-header section{
+section#nav{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -61,7 +62,8 @@ h1,h2{
     font-family: sans-serif;
 }
 
-article > h1{
+h1{
+    margin-left: 1em;
     font-size: 2em;
     align-self: normal;
 }
@@ -83,10 +85,44 @@ main article div{
     margin: 0 1em;
 }
 
-main .about-me figure{
-    background-color: 0;
+
+/*About me*/
+
+main section#about-me section article{
+    margin: 1em;
+    margin-right: 15em;
 }
 
+main section#about-me p{
+    font-size: 1.2em;
+}
+
+/*download button stuff*/
+
+main .modal-content form{
+    margin: 1em;
+}
+main .modal-content form div{
+    margin: 0.5em;
+}
+main .modal-content h4{
+    margin: 0.5em;
+}
+
+main .modal-content button{
+    background-color: #c4c4c4;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+/*Compétences*/
 
 main .projet article figure{
     background-color: #bde3ff;
@@ -113,7 +149,6 @@ main .projet article figure figcaption, main .projet article figure:hover figcap
     padding: 0.5em;
     text-align : center;
     width:fit-content;
-
     color: white;
     text-decoration: none;
 }
@@ -122,9 +157,7 @@ main .projet img{
     padding: 1em;
     opacity: 0.5;
 }
-main button{
-    position: absolute;
-}
+
 
 hr {
     size: 10px;
@@ -135,16 +168,34 @@ hr {
 }
 
 /*FLEX*/
-main section, main article{
+
+/*About Me*/
+
+main section#about-me section{
+    display: flex;
+    align-items: flex-start;
+}
+main section#about-me section article{
+    display: block;
+    flex-direction: column;
+}
+
+/*Projets*/
+main .projet section, main .projet article{
     display: flex;
     justify-content:space-evenly;
 }
-main section{
+
+main .projet section, main .projet article{
+    display: flex;
+    justify-content:space-evenly;
+}
+main .projet section{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-main article div{
+main .projet article div{
     display: flex;
     flex-direction: column;
 }
@@ -154,4 +205,110 @@ footer{
     background-color: #c4c4c4;
     padding: 0.5em;
     color: black;
+}
+
+/*Modal*/
+#myBtn{
+    background-color: #c4c4c4;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#myModal{
+    margin: 0;
+}
+/* The Modal (background) */
+.modal {
+    color: black;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0.5em;
+    margin-top: 0.1em;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+/*Footer*/
+
+footer{
+    text-align: center;
+}
+footer h4{
+    margin: 0.5em;
+}
+
+footer .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
 }
