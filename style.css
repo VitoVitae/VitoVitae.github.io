@@ -145,7 +145,11 @@ main .projet article figure{
 
 main .projet article figure:hover{
     transform: scale(1.1);
-    transition: transform .2s ease;
+    transition: transform .3s ease;
+}
+
+main .projet article img:hover{
+    opacity: 1;
 }
 
 main .projet article figure figcaption, main .projet article figure:hover figcaption{
