@@ -7,16 +7,15 @@
 	    	<meta name="keywords" content="Portfolio" />
             <meta name="author" content="Paolo Toé">
             <link rel="stylesheet" type="text/css" href="style.css">
-            <script src="myscripts.js" defer></script>
 	</head>
     <body>
         <section id="nav">
             <img src="images/logo.png" alt="logo" width="50 em" >
             <nav>
                     <a href="index.html">ACCUEIL</a>
-                    <a href="index.html#about-me">À PROPOS DE MOI</a>
-                    <a href="index.html#parcour">PARCOUR</a>
-                    <a href="index.html#skills">COMPÉTENCES</a>
+                    <a href="#about-me">À PROPOS DE MOI</a>
+                    <a href="#parcour">PARCOUR</a>
+                    <a href="#skills">COMPÉTENCES</a>
             </nav>
         </section>
         <header>
@@ -79,43 +78,6 @@
                                         Télécharger
                                     </button>
                                 </form>
-                                <script>
-                                    // Get the modal
-                                    var modal = document.getElementById("myModal");
-                    
-                                    // Get the button that opens the modal
-                                    var btn = document.getElementById("myBtn");
-                    
-                                    // Get the <span> element that closes the modal
-                                    var span = document.getElementsByClassName("close")[0];
-                    
-                                    // When the user clicks on the button, open the modal
-                                    btn.onclick = function() {
-                                        modal.style.display = "block";
-                                    }
-                    
-                                    // When the user clicks on <span> (x), close the modal
-                                    span.onclick = function() {
-                                        modal.style.display = "none";
-                                    }
-                    
-                                    // When the user clicks anywhere outside of the modal, close it
-                                    window.onclick = function(event) {
-                                        if (event.target == modal) {
-                                            modal.style.display = "none";
-                                        }
-                                    } 
-
-                                    function valider() {
-                                        if (document.getElementById('PDF').checked) {
-                                            window.open('files/CV_Paolo_TOÉ.pdf');
-                                        } else if (document.getElementById('PNG').checked) {
-                                            window.open("files/CV_Paolo_TOÉ.png");
-                                        } else{
-                                            window.open("files/CV_Paolo_TOÉ.jpg");
-                                        }
-                                    }
-                                </script>
                                 
                             </div>
                         </div>
@@ -266,5 +228,6 @@
                 </address>
             </div>    
         </footer>
+        <script src="myscripts.js"></script>
     </body>
 </html>
