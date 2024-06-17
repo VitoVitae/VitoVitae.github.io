@@ -361,6 +361,10 @@ footer .row{
     border-width: 3px;
 }
 
+#parcour a{
+    color: #618feb;
+}
+
 #parcour section{
     margin: 1em 4em;
 
