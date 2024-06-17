@@ -242,7 +242,10 @@ footer{
     padding: 0.5em;
     color: black;
 }
-
+footer a img:hover{
+    transform: scale(1.1);
+    transition: transform .3s ease;
+}
 /*Modal*/
 #myBtn{
     background-color: #c4c4c4;
@@ -254,6 +257,11 @@ footer{
     font-size: 1.2em;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+#myBtn:hover{
+    transform: scale(1.05);
+    transition: transform .3s ease;
 }
 
 #myModal{
