@@ -201,7 +201,6 @@ main .projet div{
 
 
 hr {
-    size: 10px;
     color: #c4c4c4;
     border-width: 5px;
     border-style: solid;
@@ -357,8 +356,76 @@ footer .row{
     text-align: start;
 }
 
+#parcour hr{
+    width: 40em;
+    border-width: 3px;
+}
+
 #parcour section{
     margin: 1em 4em;
 
 }
+#parcour article{
+    margin: 1em;
+    width: 50em;
+}
+
+/*detail competence*/
+
+.desc{
+    display: flex;
+}
+
+.desc h2{
+    text-align: left;
+}
+
+.desc h3{
+    margin-left: 1em;
+}
+
+.desc p{
+    margin-left: 5em;
+    width: 15em;
+    padding: 0.5em;
+    border: #c4c4c4 3px inset;
+}
+
+.proj{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+}
+
+.proj article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50em;
+}
+
+.proj article p + h3{
+    margin-left: 3em;
+}
+
+.proj article ul{
+    margin-left: 5em;
+}
+
+.proj article figure{
+    align-self: end;
+    justify-self: end;
+}
+
+.proj article figure:hover{
+    transform: scale(1.1);
+    transition: transform .3s ease;
+}
+
+.proj hr{
+    width: 40em;
+    border-width: 3px;
+    margin-bottom: 1em;
+}
+
 /*Media Queries*/
