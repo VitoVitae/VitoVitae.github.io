@@ -115,7 +115,15 @@ main article div{
 
 main section#about-me section article{
     margin: 1em;
-    margin-right: 15em;
+    align-self: left;
+    width: 50em;
+}
+
+main #about-me>section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 main section#about-me p{
@@ -379,8 +387,17 @@ footer .row{
 }
 #parcour article{
     margin: 1em;
-    width: 50em;
+    width: auto;
+    max-width: 50em;
 }
+
+#parcour .text{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/*flex*/
 
 /*detail competence*/
 
