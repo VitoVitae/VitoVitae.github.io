@@ -430,7 +430,7 @@ footer .row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 50em;
+    max-width: 50em;
 }
 
 .proj article p + h3{
